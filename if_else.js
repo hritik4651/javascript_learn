@@ -1,6 +1,6 @@
 // Conditional Statement
 
-// 1. if else Statement.
+// 2. if else Statement.
 
 if (true) {
      let no = 10;
