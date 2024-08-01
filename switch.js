@@ -28,6 +28,7 @@ if (true) {
                break;
 
           default:
+               console.log('You Enter Wrong Number.');
                break;
      }
 }

@@ -1,6 +1,6 @@
 // Conditional Statement
 
-// 2. if else if Statement.
+// 3. JavaScript If...else if statement.
 
 if (true) {
      let no = 2;

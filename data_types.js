@@ -1,10 +1,13 @@
 // Variable Types
 
+
+
 // # Primitive Types:
 
 // 1. String: Textual data.
 let a = 'Hello';
-console.log(typeof (a) + ' - ' + a);
+let a2 = "JavaScript"
+console.log(typeof (a) + ' - ' + a + ' ' + a2);
 
 
 // 2. Number: Numeric data.
@@ -33,6 +36,9 @@ let num = 100000020202484962669999292n;
 console.log(typeof (num) + ' - ' + num);
 
 
+
+
+
 // # Object Types:
 
 // 1. Object: A collection of properties.
@@ -42,11 +48,11 @@ let obj = {
      no: 400000004651
 };
 console.log(obj);
-console.log('no - ' + obj.no);
+console.log('no -> ' + obj.no);
 
 // 2. Array: An ordered list of values.
 let arr = [5, 8, 2, 4, 5, 6, 7,];
-console.log(arr);
+console.log('Array -> ' + arr);
 
 
 

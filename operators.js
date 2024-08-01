@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////// Operators.
 
-// 1. Arithmentic Operators.
+// 1. JavaScript Arithmetic Operators.
 if (true) {
      let a = 2;
      let b = 4;
@@ -30,7 +30,7 @@ if (true) {
      console.log('Decrement - ' + c);
 }
 
-// 2. Comparison (Relational) Operators.
+// 2. JavaScript Comparison Operators.
 if (false) {
      let a = 2;
      let b = 4;
@@ -63,7 +63,54 @@ if (false) {
      }
 }
 
-// 3. Assignment Operators.
+// 3. JavaScript Bitwise Operators.
+if (false) {
+     let a = 2; // 0010
+     let b = 3; // 0011
+     let c, d;
+
+     c = a & b; // 0010
+     console.log('A AND B - ' + c);
+
+     c = a | b; // 0011
+     console.log('A OR B - ' + c);
+
+     c = a ^ b; // 0001
+     console.log('A XOR B - ' + c);
+
+     c = ~a;
+     console.log('A NOT - ' + c);
+
+     c = a << 1; // 0100
+     console.log('Left Shift - ' + c);
+
+     d = 5 // 00000101
+     c = d >> 1; // 00000010
+     console.log('Right Shift - ' + c);
+
+     d = -5 // 11111111111111111111111111111011
+     c = d >>> 1; // 01111111111111111111111111111101
+     console.log('Zero-fill Right Shift - ' + c);
+
+}
+
+// 4. JavaScript Logical Operators.
+if (false) {
+     let a = true;
+     let b = true;
+     let c = false;
+     if (a && b) {  // Logical AND
+          console.log('When Both are true .');
+     }
+     if (a || c) {  // Logical OR	
+          console.log('if Both have any one is True .');
+     }
+     if (!c) {      // Logical Not	
+          console.log('when condition is not True.');
+     }
+}
+
+// 5. JavaScript Assignment Operators.
 if (false) {
      let a = 2;
      let b = 4;
@@ -91,54 +138,8 @@ if (false) {
      console.log(b);
 }
 
-// 4. Logical Operators.
-if (false) {
-     let a = true;
-     let b = true;
-     let c = false;
-     if (a && b) {  // Logical AND
-          console.log('When Both are true .');
-     }
-     if (a || c) {  // Logical OR	
-          console.log('if Both have any one is True .');
-     }
-     if (!c) {      // Logical Not	
-          console.log('when condition is not True.');
-     }
-}
 
-// 5. Bitwise Operators.
-if (false) {
-     let a = 2; // 0010
-     let b = 3; // 0011
-     let c, d;
-
-     c = a & b; // 0010
-     console.log('A AND B - ' + c);
-
-     c = a | b; // 0011
-     console.log('A OR B - ' + c);
-
-     c = a ^ b; // 0001
-     console.log('A XOR B - ' + c);
-
-     c = ~a;
-     console.log('A NOT B - ' + c);
-
-     c = a << 1; // 0100
-     console.log('Left Shift - ' + c);
-
-     d = 5 // 00000101
-     c = d >> 1; // 00000010
-     console.log('Right Shift - ' + c);
-
-     d = -5 // 11111111111111111111111111111011
-     c = d >>> 1; // 01111111111111111111111111111101
-     console.log('Zero-fill Right Shift - ' + c);
-
-}
-
-// 6. Special Operators.
+// 6. JavaScript Special Operators.
 if (false) {
      let a = 2;
      let b = 4;

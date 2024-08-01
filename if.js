@@ -1,6 +1,6 @@
 // Conditional Statement
 
-// 1. if Statement.
+// 1. JavaScript If statement.
 
 if (false) {
      let x = 21;
@@ -11,6 +11,3 @@ if (false) {
           console.log('You are adult. ');
      }
 }
-
-
-
