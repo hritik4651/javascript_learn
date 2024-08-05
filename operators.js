@@ -28,6 +28,19 @@ if (true) {
 
      c--;
      console.log('Decrement - ' + c);
+
+     let i = 3;
+     const j = i++; // Postfix increment
+
+     console.log(`i:${i}, j:${j}`);
+     // Expected output: "i:4, j:3"
+
+     let p = 3;
+     const s = ++p; // Prefix increment
+
+     console.log(`p:${p}, s:${s}`);
+     // Expected output: "p:4, s:4"
+
 }
 
 // 2. JavaScript Comparison Operators.

@@ -10,3 +10,12 @@ if (true) {
           console.log('Number is Odd.');
      }
 }
+
+if (true) {
+     const age = 16;
+     if (age >= 14) {
+          console.log('You are able to Watch this Movie.');
+     } else {
+          console.log('You are not able to Watch this Movie. . . ...!');
+     }
+}

@@ -35,21 +35,22 @@ fb();
 // # var
 var a = 10;
 var aa = 5;
-console.log(a);
+console.log('a - ' + a);
 if (true) {
      var aa = 15; // Allow Re-declare
 }
-console.log(aa); // Function Scope.
+console.log('aa - ' + aa); // Function Scope.
 
 
 
 // # let
 let b = 40;
 // let b='zip'; // Identifier 'b' has already been declared.
-console.log(b);
+console.log('b - ' + b);
+
 if (true) {
      let bb = 45;
-     console.log(bb); // Block Scope.
+     console.log('bb - ' + bb); // Block Scope.
 }
 // console.log(bb); // ERROR :  bb is not defined.
 
@@ -59,6 +60,7 @@ if (true) {
 // # const
 const c = 3.14;
 // const c='code'; // Identifier 'c' has already been declared.
-console.log(c);
+// c = 'good' // TypeError: Assignment to constant variable.
+console.log('c - ' + c);
 
 

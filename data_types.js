@@ -16,7 +16,9 @@ console.log(typeof (b) + ' - ' + b);
 
 // 3.Boolean: True or false.
 let isAdmin = true;
+let isUser = false;
 console.log(typeof (isAdmin) + ' - ' + isAdmin);
+console.log(typeof (isUser) + ' - ' + isUser);
 
 // 4. Undefined: A variable that has been declared but not yet assigned a value.
 let txt;
@@ -45,10 +47,12 @@ console.log(typeof (num) + ' - ' + num);
 let obj = {
      nam: 'hrx',
      isAdmin: true,
-     no: 400000004651
+     no: 400000004651,
+     sign: Symbol('signnn.')
 };
 console.log(obj);
 console.log('no -> ' + obj.no);
+console.log(typeof obj.sign);
 
 // 2. Array: An ordered list of values.
 let arr = [5, 8, 2, 4, 5, 6, 7,];
@@ -60,8 +64,8 @@ console.log('Array -> ' + arr);
 /// # Additional
 
 // * Hoisting: Variables declared with var are hoisted to the top of their scope and initialized with undefined. Variables declared with let and const are hoisted but not initialized.
-console.log(ab);
-var ab = 545;
+console.log(ab); // give undefined
+var ab = 524548445;
 
 console.log(ab);
 
@@ -83,5 +87,4 @@ if (true) {
 }
 console.log(ax);
 // console.log(bx); // ReferenceError: bx is not defined
-// console.log(cx); // ReferenceError: cx is not defined
-
+// console.log(cx); // ReferenceError: cx is not defined.

@@ -3,12 +3,12 @@
 // 3. JavaScript If...else if statement.
 
 if (true) {
-     let no = 2;
+     const no = 1;
      if (no > 0) {
-          console.log('Number is Positive.');
+          console.log('Number is Positive...');
      } else if (no < 0) {
-          console.log('Number is Negetive.');
+          console.log('Number is Negative. . . . . .!');
      } else {
-          console.log('Number is 0');
+          console.log('Number is Equal to = 0');
      }
 }

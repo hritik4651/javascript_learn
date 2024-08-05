@@ -1,3 +1,5 @@
+"use strict" // treat all JS code as newer Version.
+
 console.time('test');
 
 console.log('hey');

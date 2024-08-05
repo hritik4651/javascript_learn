@@ -3,7 +3,7 @@
 // 4. Switch Statement.
 
 if (true) {
-     let day = 1;
+     let day = 5;
      switch (day) {
           case 0:
                console.log('Today is SunDay.');

@@ -1,17 +1,18 @@
 // 4) JavaScript for in loop.
 
 let person = {
-     firstName: "John",
-     lastName: "Doe",
-     age: 30
- };
+    firstName: "John",
+    lastName: "Doe",
+    age: 30
+};
 
- 
- for (let key in person) {
-     // if (Object.hasOwnProperty.call(object, key)) {
-     //      const element = object[key];
-          
-     // }
 
-     console.log(key + ' : ' + person[key]);
- }
+for (let key in person) {
+
+    console.log(key + ' : ' + person[key]);
+    if (key == "age") {
+        if (person["age"] > 25) {
+            console.log('Found Itttttt.....');
+        }
+    }
+}

@@ -35,8 +35,10 @@ let add1 = add(10, 20);
 console.log(add1);
 
 let str = new Function("arg", "return arg.toString()");
-let data = str('start12345');
-console.log(data);
+let data = str(24556);
+console.log('Data - ' + data);
+console.log(typeof data);
 
-// console.log(Date());
+
+console.log(Date());
 
