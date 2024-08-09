@@ -23,14 +23,10 @@ console.log(person["lastName"]); // Doe
 person["age"] = 32;
 
 
-// /// 2) By creating instance of Object
-// let obj1 = new Object();
-// obj1.id = 101;
-// obj1.Lname = "Shankar";
-// obj1.number = 0;
-// console.log(obj1);
+// /// 2) By creating instance of Object directly (using new keyword)
 
-let obj = new Object();
-obj.n11 = 'hxy';
-obj.n22 = 'hrx';
-console.log(obj);
+let obj1 = new Object();
+obj1.id = 101;
+obj1.Lname = "Shankar";
+obj1.number = 0;
+console.log(obj1);

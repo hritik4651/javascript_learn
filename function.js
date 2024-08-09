@@ -32,13 +32,16 @@ console.log(hi);
 // JavaScript Function Object Examples.
 let add = new Function("num1", "num2", "return num1 + num2");
 let add1 = add(10, 20);
-console.log(add1);
+console.log('Addition : ' + add1);
 
+
+// JavaScript Function Methods.
+//toString()
+//Date()
 let str = new Function("arg", "return arg.toString()");
 let data = str(24556);
 console.log('Data - ' + data);
 console.log(typeof data);
-
 
 console.log(Date());
 

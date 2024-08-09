@@ -35,13 +35,16 @@ console.log(symbolVar);
 
 // 7. BigInt: Represents integers of arbitrary length.
 let num = 100000020202484962669999292n;
+let noo = BigInt('3298944949845');
+
 console.log(typeof (num) + ' - ' + num);
+console.log(typeof (noo) + ' - ' + noo);
 
 
 
 
 
-// # Object Types:
+// # Non - Primitive Types:
 
 // 1. Object: A collection of properties.
 let obj = {

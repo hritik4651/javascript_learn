@@ -91,7 +91,7 @@ if (false) {
      c = a ^ b; // 0001
      console.log('A XOR B - ' + c);
 
-     c = ~a;
+     c = ~a;   
      console.log('A NOT - ' + c);
 
      c = a << 1; // 0100
