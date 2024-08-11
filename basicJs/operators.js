@@ -6,74 +6,74 @@ if (true) {
      let b = 4;
      let c;
      c = a + b;
-     console.log('Addition - ' + c);
+     console.log('Addition - ', c);
 
      c = b - a;
-     console.log('Subtraction - ' + c);
+     console.log('Subtraction - ', c);
 
      c = b / a;
-     console.log('Divied - ' + c);
+     console.log('Divied - ', c);
 
      c = a * b;
-     console.log('Multiplication - ' + c);
+     console.log('Multiplication - ', c);
 
      c = b % a;
-     console.log('Modulus (Remainder) - ' + c);
+     console.log('Modulus (Remainder) - ', c);
 
      c = b ** a;
-     console.log('Exponentiation - ' + c);
+     console.log('Exponentiation - ', c);
 
      c++;
-     console.log('Increment - ' + c);
+     console.log('Increment - ', c);
 
      c--;
-     console.log('Decrement - ' + c);
+     console.log('Decrement - ', c);
 
      let i = 3;
      const j = i++; // Postfix increment
 
-     console.log(`i:${i}, j:${j}`);
+     console.log(`Postfix increment    -->>>>   i:${i}, j:${j}`);
      // Expected output: "i:4, j:3"
 
      let p = 3;
      const s = ++p; // Prefix increment
 
-     console.log(`p:${p}, s:${s}`);
+     console.log(`Prefix increment    -->>>>   p:${p}, s:${s}`);
      // Expected output: "p:4, s:4"
 
 }
 
 // 2. JavaScript Comparison Operators.
 if (false) {
-     let a = 2;
-     let b = 4;
-     let c = 'hello';
-     let d = '2';
-     let e = 2;
-     if (a == d) {
-          console.log('a and b is equal.');
-     }
-     if (a === e) {
-          console.log('a and b  values or datatypes are equal. ');
-     }
-     if (a != c) {
-          console.log('a and c is not equal.');
-     }
-     if (a !== d) {
-          console.log('a and d values or datatypes are not equal');
-     }
-     if (b > a) {
-          console.log('B is Greater.');
-     }
-     if (a < b) {
-          console.log('A is smaller');
-     }
-     if (a <= e) {
-          console.log('A is equal to E.');
-     }
-     if (e >= a) {
-          console.log('E is equal to A.');
-     }
+
+     console.log('::::::::::::::::::::::::::::::::::::::::::');
+     console.log('5 == 5', 5 == 5);//true
+     console.log('5 == 4', 5 == 4);//false
+
+     console.log('::::::::::::::::::::::::::::::::::::::::::');
+     console.log('2 === "2"', 2 === '2');//false
+     console.log('2 === 2', 2 === 2);//true
+
+     console.log('::::::::::::::::::::::::::::::::::::::::::');
+     console.log('8 != 7', 8 != 7);//true
+     console.log('8 != "8"', 8 != "8");//false
+
+     console.log('::::::::::::::::::::::::::::::::::::::::::');
+     console.log('3 !== "3"', 3 !== "3");//true
+     console.log('3 !== 3', 3 !== 3);//false
+
+     console.log('::::::::::::::::::::::::::::::::::::::::::');
+     console.log('5 > 4', 5 > 4);//true
+     console.log('5 > 5', 5 > 5);//false
+     console.log('3 < 4', 3 < 4);//true
+     console.log('4 < 4', 4 < 4);//false
+
+     console.log('::::::::::::::::::::::::::::::::::::::::::');
+     console.log('1 >= 1', 1 >= 1);//true
+     console.log('1 >= 2', 1 >= 2);//false
+     console.log('2 <= 3', 2 <= 3);//true
+     console.log('2 <= 1', 2 <= 1);//false
+
 }
 
 // 3. JavaScript Bitwise Operators.
@@ -91,7 +91,7 @@ if (false) {
      c = a ^ b; // 0001
      console.log('A XOR B - ' + c);
 
-     c = ~a;   
+     c = ~a;
      console.log('A NOT - ' + c);
 
      c = a << 1; // 0100
@@ -109,18 +109,23 @@ if (false) {
 
 // 4. JavaScript Logical Operators.
 if (false) {
-     let a = true;
-     let b = true;
-     let c = false;
-     if (a && b) {  // Logical AND
-          console.log('When Both are true .');
-     }
-     if (a || c) {  // Logical OR	
-          console.log('if Both have any one is True .');
-     }
-     if (!c) {      // Logical Not	
-          console.log('when condition is not True.');
-     }
+
+     console.log('::::::::::::::::::::::::::::::::::::::::::');
+     console.log('true && true :', true && true);//true
+     console.log('true && false :', true && false);//false
+     console.log('false && true :', false && true);//false
+     console.log('false && false :', false && false);//false
+
+     console.log('::::::::::::::::::::::::::::::::::::::::::');
+     console.log('true || true :', true || true);//true
+     console.log('true || false :', true || false);//false
+     console.log('false || true :', false || true);//false
+     console.log('false || false :', false || false);//false
+
+     console.log('::::::::::::::::::::::::::::::::::::::::::');
+     console.log('! true', !true);
+     console.log('! false', !false);
+
 }
 
 // 5. JavaScript Assignment Operators.
@@ -150,7 +155,6 @@ if (false) {
      b **= a; // Exponentiation assignment.
      console.log(b);
 }
-
 
 // 6. JavaScript Special Operators.
 if (false) {

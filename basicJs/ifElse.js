@@ -19,3 +19,11 @@ if (true) {
           console.log('You are not able to Watch this Movie. . . ...!');
      }
 }
+
+if (true) {
+     // Ternary Operator.
+     let no = 19;
+     let isFound = (no > 18) ? true : false;
+     console.log(isFound);
+
+}
