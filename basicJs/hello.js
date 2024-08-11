@@ -8,8 +8,3 @@ Comment */
 
 
 console.log('Hello_JavaScript');
-
-let a= 1;
-
-++a;
-console.log(a);

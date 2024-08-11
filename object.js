@@ -1,6 +1,6 @@
-// // JavaScript Objects.
+// Objects in JS [ Non-Primitive DataType. ]
 
-// /////// Creating Objects.
+
 
 // /// 1) JavaScript Object by using object literal
 

@@ -12,7 +12,9 @@ console.log(typeof (a) + ' - ' + a + ' ' + a2);
 
 // 2. Number: Numeric data.
 let b = 24;
+let b2 = 3.14;
 console.log(typeof (b) + ' - ' + b);
+console.log(typeof (b2) + ' - ' + b2);
 
 // 3.Boolean: True or false.
 let isAdmin = true;
@@ -59,7 +61,23 @@ console.log(typeof obj.sign);
 
 // 2. Array: An ordered list of values.
 let arr = [5, 8, 2, 4, 5, 6, 7,];
+const arr2 = ['a','i','o','u','e'];
 console.log('Array -> ' + arr);
+console.log('Array 2 : ' + arr2);
+
+// 3. Function:
+function myFunction() {
+     console.log('This is Function . ...!');
+}
+myFunction();
+
+// 4. RegExp (Regular Expressions):
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let path = RegExp('/@]+@[^\s@]+');
+console.log(path);
+console.log(typeof emailRegex);
+console.log(emailRegex);
+
 
 
 

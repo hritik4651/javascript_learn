@@ -4,8 +4,10 @@
 let str = "this is String."; //ex1
 let str2 = '2nd String.'; //ex2
 
+str[0]="T";//Immutable [we can't Change values in String]
+
 console.log(str);
-console.log('str Length : ', str.length);// String method 
+console.log('str Length : ', str.length);//property 
 console.log(str[8]); // Spacific index value. 
 
 console.log(str2);

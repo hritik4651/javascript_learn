@@ -3,10 +3,12 @@
 // Correct JavaScript variables.
 var z = 18;
 var _xyx = 'adult';
+var $fullName = "Allow";
 
 // Incorrect JavaScript variables.
 // var 123 = 22;
 // var *aa = 58;
+// var 12hrx = "hello";
 
 
 // JavaScript local variable.
