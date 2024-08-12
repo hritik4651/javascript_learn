@@ -7,21 +7,21 @@ let ar3 = [1, "abcd", 2, "hrx", 3, "hrz"];
 ar3[1] = "gen";//Mutable [ we can change value of array index in Array. ]
 
 console.table(ar1);
-console.log(ar1.length);//Property
+console.log(`Total Length of Array : [ ${ar1.length} ]`);//Property
 
-console.log(ar2[2]);
+// console.log(ar2[2]);
 console.log('changed : ' + ar3[1]);
 
 console.log(ar1[5]);//undefined because index of 5 is not exist.
 
-console.log('Array 1 ::::::::::::::::: using For Loop');
+console.log('Array 1 :::::::::::::::::::::::: using For Loop');
 for (let i = 0; i < ar1.length; i++) { // Using For Loop.
      console.log(ar1[i]);
 }
 
-console.log('Array 2 ::::::::::::::::::::::::  using For of Loop');
+console.log('Array 2 :::::::::::::::::::::::: using For of Loop');
 for (let val of ar2) { // Using For of Loop.
-     console.log(val.toLocaleUpperCase());
+     console.log(val);
 }
 
 if (false) {
@@ -33,7 +33,7 @@ if (false) {
 
      let avg = sum / marks.length;
      console.log(`Average Marks : ${avg}`);
-}
+}``
 
 if (false) {
      let item = [350, 954, 7245, 84];
@@ -50,10 +50,10 @@ let test = ["a", "b", "c", "d", "e", "f", "g", "h"];
 console.log("Original Array :::::::::::::::::::::::::::::::::::::::::::::::::  " + arrOpera);
 
 arrOpera.push(200);//Add Value to End.
-console.log('After Push A Value :--  ' + arrOpera);
+console.log(`After Push A Value [${200}] :-- ${arrOpera}`);
 
 arrOpera.unshift(0);//Add Value to Start.
-console.log('After unshift A Value :--- ' + arrOpera);
+console.log(`After Unshift A Value [${0}] :-- ${arrOpera}`);
 
 let delEnd = arrOpera.pop();//Delete Value From End & REturn.
 console.log('Pop Value : ', delEnd);

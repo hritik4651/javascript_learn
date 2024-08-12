@@ -1,7 +1,6 @@
 // String in JS
 
-
-let str = "this is String."; //ex1
+let str = "this is String. 1 "; //ex1
 let str2 = '2nd String.'; //ex2
 
 str[0]="T";//Immutable [we can't Change values in String]
@@ -10,7 +9,7 @@ console.log(str);
 console.log('str Length : ', str.length);//property 
 console.log(str[8]); // Spacific index value. 
 
-console.log(str2);
+// console.log(str2);
 
 // Template Literals [ A Way to have embedded expressions in string. ]
 let a = 5;
@@ -28,7 +27,7 @@ let newString = "      JavaScript Full Course";
 let up = newString.toUpperCase();// Convert to UpperCase.
 console.log(up);
 
-let lo = newString.toLocaleLowerCase();// Convert to LowerCase.
+let lo = newString.toLowerCase();// Convert to LowerCase.
 console.log(lo);
 
 let tr = newString.trim();// Trim Extra Spaces to start and end.

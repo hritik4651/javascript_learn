@@ -2,7 +2,7 @@
 # Learn JavaScript
 
 
-# Install NodeJs in Ubuntu.
+# Install NodeJs in Ubuntu 22.04.4 LTS.
 
 
 Step 1 - Add NodeSource PPA
