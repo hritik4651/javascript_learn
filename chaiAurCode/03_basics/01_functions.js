@@ -8,8 +8,8 @@ function myFunction() {
 function addNumber(no1, no2) {
      console.log(no1 + no2);
 }
-// addNumber(2, 5);
-// addNumber(2, "5");
+// addNumber(2, 5);// 7
+// addNumber(2, "5");// 25
 // addNumber(); // NaN
 
 // const res = addNumber(5, 5); // it not return any Value.
@@ -32,7 +32,7 @@ function hello(name) {
 // console.log(hello()); // undefined
 // console.log(hello());
 
-function newHello(name = "guest") {
+function newHello(name = "guest") { // take "guest" by default. if you don't give any arguments.
      return `Hello, ${name} `
 }
 // console.log(newHello());
@@ -45,10 +45,10 @@ function newHello(name = "guest") {
 // console.log(calculateCartPrice(5));
 
 
-// function calculateCartPrice(...num1) { // rest Operator.
-//      return num1;
-// }
-// console.log(calculateCartPrice(5, 10, 20, 50));
+function calculateCartPrice(...num1) { // rest Operator.
+     return num1;
+}
+console.log(calculateCartPrice(5, 10, 20, 50));
 
 // function calculateCartPrice(no1, no2, ...num1) { // rest Operator.
 //      return num1;
@@ -66,12 +66,12 @@ function handleObj1(user) {
 // handleObj1(obj1);
 
 function handleObj2(user) {
-     console.log(`User Name : ${user.fullName} and Id : ${user.id}`); //undefined
+     console.log(`User Name : ${user.fullName} and Id : ${user.id}`); //undefined because fullName is not exist 
 }
 // handleObj2(obj1);
 
 function handleObj3(user) {
-     console.log(`User Name : ${user.userName} and Id : ${user.id}`); //undefined
+     console.log(`User Name : ${user.userName} and Id : ${user.id}`); 
 }
 // handleObj3({ userName: "hrx", id: 123 });
 

@@ -19,11 +19,11 @@ const myArr3 = new Array(10, 20, 30, 40, 50);
 // myArr3.shift();
 // console.log(myArr3);
 
-// console.log(myArr3.includes(30));
-// console.log(myArr3.indexOf(20));
+// console.log(myArr3.includes(30));//checks value in Array.
+// console.log(myArr3.indexOf(20));//1
 
-const newArr = myArr3.join();
-// console.log(typeof newArr);
+const newArr = myArr3.join(); // convert into String
+// console.log(typeof newArr);// string
 // console.log(newArr);
 
 console.log(`Original : ${myArr3}`);

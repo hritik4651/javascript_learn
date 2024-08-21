@@ -18,8 +18,7 @@ console.log(typeof userEmail);
 const id = Symbol('123');//Symbol. // it gives unique value
 const anotherId = Symbol('123');//Symbol.   // it gives unique value
 console.log(typeof id);
-console.log(id === anotherId);
-
+console.log(id === anotherId);//false
 let bigNum = 654654654654654654654654654n;
 console.log(typeof bigNum);
 

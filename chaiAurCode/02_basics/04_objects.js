@@ -29,7 +29,7 @@ const obj3 = { 5: "e", 6: "f" };
 const obj12 = Object.assign({}, obj1, obj2);
 // console.log(obj12);
 
-const obj123 = { ...obj1, ...obj2, ...obj3 };
+const obj123 = { ...obj1, ...obj2, ...obj3 };//spread Operator.
 // console.log(obj123);
 
 const data = [
@@ -60,17 +60,18 @@ const data = [
 // console.log(Object.values(obj1));
 // console.log(Object.entries(obj1));
 
-// console.log(obj1.hasOwnProperty('1'));
-// console.log(obj1.hasOwnProperty('a'));
+// console.log(obj1.hasOwnProperty('1')); // true because checks on keys 
+// console.log(obj1.hasOwnProperty('a')); // false it not check on Values.
 
 
-// const { userName } = oldUser; //De-Structure 
-// const { userName: uName } = oldUser; //De-Structure 
 
+//// # De-Structure.
+const { userName } = oldUser; //De-Structure 
+const { userName: uName } = oldUser; //De-Structure 
+// console.log(userName);
 // console.log(uName);
 
-// JSON
-
+// JSON(JavaScript Object Notation) Formate
 // {
 //      "name": "mark",
 //      "userName": "mark42"

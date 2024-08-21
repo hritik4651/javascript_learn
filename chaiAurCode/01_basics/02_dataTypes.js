@@ -20,6 +20,7 @@ let fullName = "Tony Stark";
 
 //boolean => true / false
 let isAdmin = true;
+let isLogIn = false
 
 // null => standalone value
 let temp = null;
