@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>DOM Part-1</title>
+</head>
+
+<body>
+     <div class="mainDiv">
+          <h1 class="c1" id="mainHeading">DOM Learning.<span style="display: none;">by chaiAurCode</span></h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fugit a dicta nihil! Nulla, aperiam quis
+               recusandae ullam tenetur nostrum, est voluptatibus similique ad exercitationem maxime ab. Explicabo, eos
+               vitae!</p>
+     </div>
+     <dic class="class2">
+          <input type="password" name="input" id="in1">p
+
+          <ul>
+               <li>js</li>
+               <li>py</li>
+               <li>java</li>
+               <li>cpp</li>
+               <li>c</li>
+          </ul>
+
+          <ul class="list2">
+               <li class="c22">one</li>
+               <li class="c22">two</li>
+          </ul>
+     </dic>
+
+     <script>
+          const byClass = document.getElementsByClassName("mainDiv")
+ 
+          document.getElementById("mainHeading")
+          document.getElementById("mainHeading").id
+          document.getElementById("mainHeading").className
+          document.getElementById("mainHeading").getAttribute("id")
+          document.getElementById("mainHeading").getAttribute("class")
+          document.getElementById("mainHeading").setAttribute("class", "c1 c2 c3")// always overwrite
+
+          const title = document.getElementById("mainHeading")
+          title.style.backgroundColor = "green"
+          title.style.padding = "12px"
+          title.style.borderRadius = "18px"
+
+          console.log(title.innerText);
+
+          console.log(title.textContent);
+
+          console.log(title.innerHTML);
+
+
+
+          // console.log(document.querySelector('h1'));
+          // console.log(document.querySelector('#mainHeading'));
+          // console.log(document.querySelector('.c1'));
+          // console.log(document.querySelector('input[type="password"]'));
+          // console.log(document.querySelector('p:first-child'));
+
+          const myList = document.querySelector("ul")
+          const newList = myList.querySelector("li")
+          newList.style.backgroundColor = "red"
+          newList.style.padding = "8px"
+
+
+          const myList1 = document.querySelector("ul")
+          const newList1 = myList1.querySelectorAll("li")
+          newList1.forEach((item) => {
+               item.style.backgroundColor = "blue"
+          })
+
+          newList1[0].style.backgroundColor = "red"
+
+          const myC22 = document.querySelectorAll(".c22")
+          const newC22 = Array.from(myC22)
+          console.log(newC22);
+          newC22.map((item) => {
+               item.style.backgroundColor = "#212121"
+               item.style.color = "white"
+               item.style.padding = "18px"
+               item.style.borderRadius = "13px"
+          })
+
+
+
+
+
+
+
+
+
+
+
+     </script>
+</body>
+
+</html>

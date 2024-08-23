@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>DOM part-4</title>
+</head>
+
+<body style="background-color: #212121;color: #fff;">
+     <div class="superParent">
+          <ul class="language">
+               <li>JavaScript</li>
+          </ul>
+     </div>
+
+</body>
+<script>
+
+     console.log(document.querySelector(".language"));
+
+
+     //// #Create
+
+     const addLi = (lang) => {
+          const li = document.createElement("li")
+          li.innerHTML = `${lang}`
+          document.querySelector(".language").appendChild(li)
+     }
+     addLi("Python")
+
+
+     // A Good way
+     const adList = (lang) => {
+          const li = document.createElement("li")
+          li.appendChild(document.createTextNode(lang))
+          document.querySelector(".language").appendChild(li)
+     }
+     adList("Rust")
+     adList("Golang")
+
+
+     //// #Edit
+
+     const secondLang = document.querySelector("li:nth-child(2)")
+     console.log(secondLang);
+     // secondLang.innerHTML="Mojo"
+     const newLi = document.createElement("li")
+     newLi.appendChild(document.createTextNode("MoJo"))
+     secondLang.replaceWith(newLi)
+
+     const firstLang = document.querySelector("li:first-child")
+     firstLang.outerHTML = "<li>javascript->js</li>"
+
+     //// #remove
+
+     const rmLang = document.querySelector("li:last-child")
+     rmLang.remove()
+
+
+
+</script>
+
+</html>

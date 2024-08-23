@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Dom part-3</title>
+</head>
+
+<body style="background-color: #212121;color: #fff;">
+
+
+</body>
+<script>
+
+     const createDiv = document.createElement('div')
+     console.log(createDiv);
+     createDiv.className = "main"
+     createDiv.id = "superParent"
+     createDiv.setAttribute("title", "generated title")
+     createDiv.style.backgroundColor = "#fff"
+     createDiv.style.color = "#212121"
+     createDiv.style.padding = "18px"
+
+     const addText = document.createTextNode("Wellcome")
+     createDiv.appendChild(addText)
+
+     document.body.appendChild(createDiv)
+
+</script>
+
+</html>
