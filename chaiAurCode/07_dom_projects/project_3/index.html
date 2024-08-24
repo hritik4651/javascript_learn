@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+          p {
+               font-size: 35px;
+          }
+
+
+          #goTOHome {
+               color: #fff;
+               font-size: 28px;
+          }
+     </style>
+     <title>Project-3</title>
+</head>
+
+<body style="background-color: #212122;color: #fff;">
+     <div class="mainContainer">
+          <div class="header">
+               <h1 style="text-align: center;padding: 8px;background-color: #212122;border-style: groove;color: #fff;">
+                    Project-3
+               </h1>
+          </div>
+          <div class="container">
+               <h1>Your Local Time</h1>
+               <p id="timer"></p>
+               <br />
+          </div>
+     </div>
+     <hr>
+     <div>
+          <a id="goTOHome" href="../index.html">Home</a>
+     </div>
+
+</body>
+<script>
+
+     const timer = document.getElementById("timer")
+
+     let date = new Date();
+     console.log(date.toLocaleString());
+
+     setInterval(() => {
+          let date = new Date();
+          timer.innerHTML = date.toLocaleTimeString();
+     }, 1000)
+
+</script>
+
+
+</html>

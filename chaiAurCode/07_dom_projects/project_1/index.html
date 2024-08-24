@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+          span {
+               display: block;
+          }
+
+          .canvas {
+               margin: 100px auto 100px;
+               width: 80%;
+               text-align: center;
+          }
+
+          .rainbow div {
+               height: 50px;
+               width: 100%;
+          }
+
+          #red {
+               background-color: red;
+          }
+
+          #orange {
+               background-color: orange;
+          }
+
+          #yellow {
+               background-color: yellow;
+          }
+
+          #green {
+               background-color: green;
+          }
+
+          #blue {
+               background-color: blue;
+          }
+
+          #indigo {
+               background-color: indigo;
+          }
+
+          #violet {
+               background-color: violet;
+          }
+
+          #goTOHome {
+               color: #fff;
+               font-size: 28px;
+          }
+     </style>
+     <title>Project-1</title>
+</head>
+
+<body style="background-color: #212122;color: #fff;">
+     <div class="mainContainer">
+          <div class="header">
+               <h1 style="text-align: center;padding: 8px;background-color: #212122;border-style: groove;">Project-1
+               </h1>
+          </div>
+          <div class="canvas">
+               <h1>Color Scheme Switcher</h1>
+               <div style="border-style: groove;" class="rainbow">
+                    <div class="button" id="red"></div>
+                    <div class="button" id="orange"></div>
+                    <div class="button" id="yellow"></div>
+                    <div class="button" id="green"></div>
+                    <div class="button" id="blue"></div>
+                    <div class="button" id="indigo"></div>
+                    <div class="button" id="violet"></div>
+                    <!-- <div class="button" id="white"></div> -->
+               </div>
+               <h2>
+                    Try clicking on one of the colors above
+                    <span>to change the background color of this page!</span>
+               </h2>
+          </div>
+     </div>
+     <div>
+          <a id="goTOHome" href="../index.html">Home</a>
+     </div>
+
+</body>
+<script>
+
+     const button = document.querySelectorAll(".button")
+     const body = document.querySelector("body")
+
+     const b2 = document.
+          I
+     button.forEach((button) => {
+          console.log(button);
+          button.addEventListener('click', (e) => {
+               console.log(e);
+               if (e.target.id === "red") {
+                    body.style.backgroundColor = e.target.id
+               }
+               if (e.target.id === "orange") {
+                    body.style.backgroundColor = e.target.id
+               }
+               if (e.target.id === "violet") {
+                    body.style.backgroundColor = e.target.id
+               }
+               if (e.target.id === "white") {
+                    body.style.backgroundColor = e.target.id
+               }
+               if (e.target.id === "blue") {
+                    body.style.backgroundColor = e.target.id
+               }
+               if (e.target.id === "yellow") {
+                    body.style.backgroundColor = e.target.id
+               }
+               if (e.target.id === "indigo") {
+                    body.style.backgroundColor = e.target.id
+               }
+               if (e.target.id === "green") {
+                    body.style.backgroundColor = e.target.id
+               }
+          })
+     })
+
+</script>
+
+
+</html>
